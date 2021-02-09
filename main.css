@@ -1,0 +1,178 @@
+/* Paramètres généraux */
+
+body{
+    font-family: 'Poppins', sans-serif ;
+    color: #030612;
+    background-color: #EDF4F8;
+}
+
+/* Header avec logo/bouton/BurgerMenu en flex + marges fixes à droite et à gauche*/
+
+header {
+    background-color: #CBD8F6;
+    height: 90px;;
+}
+
+.Menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Logo {
+    margin-left: 144px;
+}
+
+.MenuButton > a {
+    padding: 16px 20px;
+    border-radius: 15px;
+}
+
+.ButtonA {
+    background-color: #4169E1;
+    color: #EDF4F8;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.ButtonB {
+    color: #4169E1;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.BurgerMenu {
+    display: flex;
+    text-align: end;
+    margin-right: 144px;
+}
+
+ul.MenuList {
+    display: none;
+    position: absolute;
+}
+
+li:hover ul.MenuList {
+    display : block;
+}
+
+ul.MenuList li {
+    padding: 16px 20px;
+    position: relative;
+    background-color: #CBD8F6;
+}
+
+ul.MenuList li a{
+    text-decoration: none;
+    color: #4169E1;
+}
+/* Corps de la page */
+
+/* Section de l'équipe, en flex (je suis le plus à l'aise dessus). La marge du H2 est fixe c'est fait exprès. Des adaptations au niveau de la taille de la police ont été faites par rapport aux frames faites avant. Présentation team + rôle de chacun */
+
+div.Team {
+    background-color: #EDF4F8;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43.2px;
+}
+
+.TitleTeam {
+    margin-bottom: 100px;
+    margin-left: 217px;
+}
+
+.block {
+    background-color: #CBD8F6;
+    width: 231px;
+    height: 231px;
+}
+
+.text {
+    width: 231px;
+    height: 231px;
+    padding: 0px 10px;
+}
+
+.Row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.text h4{
+    margin-bottom: 20px;
+}
+
+/* Partie 2 : Le paragraphe sur notre projet. Ce qu'on a décidé etc. Partie courte. Changement de fond pour marquer le changement de section. */
+
+div.Project {
+    background-color: #CBD8F6;
+    padding: 100px 0;
+}
+
+.TitleProject {
+    margin-bottom: 50px;
+    margin-left: 217px;
+}
+
+div.Project p {
+    padding: 0px 200px;
+}
+
+/* Partie 3 : Les jeux, en flex avec icone + explications simples afin qu'un bouton play pour aller directement jouer */
+
+div.Games {
+    background-color: #EDF4F8;
+    padding: 100px 0;
+}
+
+.TitleGames {
+    margin-bottom: 100px;
+    margin-left: 217px;
+}
+
+.GamesBlock {
+    background-color: #4169E1;
+    width: 231px;
+    height: 231px;
+}
+
+.GamesText{
+    width: 231px;
+    height: 231px;
+    padding: 0px 10px;
+}
+
+.GamesRow {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.ButtonRow {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.ButtonRow a{
+    margin-left: 231px;
+}
+
+#Invisible {
+    background-color: #EDF4F8;
+}
