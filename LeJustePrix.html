@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <link rel="shortcut icon" type="image/png" href="images/Logotype.png" />
+    <title>Le Juste Prix</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='mainClair.css' class="LinkMode">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- Dans un premier temps, développement de la barre nav sans le menu -->
+        <nav class="Menu">
+            <div class="Logo">
+                <img src="images/LightThemeLogo.png" alt="LogoLight" class="LogoMode">
+            </div>
+            <div class="MenuButton">
+                <a class="PrimaryButton" href="#">S'inscrire</a>
+                <a class="TextButton" href="#">Connexion</a>
+            </div>
+            <!-- Menu burger pour accéder aux jeux directement avec hover pour menu déroulant -->
+            <div class="BurgerMenu">
+                <ul>
+                    <li><a href="#"><img class="MenuHover" src="images/LightThemeMenu.png" alt="HamburgerMenu"></a>
+                        <ul class="MenuList">
+                            <li><a href="PageJeu1.html">Le Juste Prix</a></li>
+                            <li><a href="#">Le Jeu du Simon</a></li>
+                            <li><a href="#">Le Jeu des Paires</a></li>
+                            <li><a href="#">Le Snake</a></li>
+                            <li><a href="#">Le Mastermind</a></li>
+                            <li class="ModeSombre"><a href="#">Mode Sombre</a></li>
+                            <li class="ModeClair"><a href="#">Mode Clair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <div>
+            <div class="PresentationGame">
+                <h2 class="TitlePresentationGame">Le Juste Prix</h2>
+                <p>L'objectif de ce jeu est de deviner le prix auquel pense l'autre joueur. Ce prix doit être compris entre 0 et 100 inclus.Puis, celui qui a réussit à deviner avec le moins d'essais gagne.</p><br/>
+                <p>Dans une première manche, le joueur devine le prix fixé par l'ordinateur. Il propose des solutions et l'ordinateur réponds suivant la proposition : "Plus grand", "Plus petit" ou bien "C'est ça!". L'ordinateur compte aussi le nombre d'essais.</p><br/>
+                <p>Dans une deuxième manche, le joueur pense à un prix (compris entre 0 et 100 inclus) et l'ordinateur va proposer des solutions. Le joueur devra cliquer sur les boutons "Plus grand", "Plus petit" ou "C'est ça!" suivant la réponse de l'ordinateur. Celui-ci comptera également les essais.</p><br/>
+                <p>Le résultat final sera donné à la fin des deux manches.</p>
+            </div>
+            <div class="GameBackground">
+                <div class="GamePlace">
+                    
+                </div>
+            </div>
+            <div class="GameMenu">
+                <div>
+                    <div class="GamesBlock"></div>
+                    <a href="#" class="PrimaryButton">Play</a>
+                </div>
+                <div>
+                    <div class="GamesBlock"></div>
+                    <a href="#" class="PrimaryButton">Play</a>
+                </div>
+                <div>
+                    <div class="GamesBlock"></div>
+                    <a href="#" class="PrimaryButton">Play</a>
+                </div>
+                <div>
+                    <div class="GamesBlock"></div>
+                    <a href="#" class="PrimaryButton">Play</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <!-- Forme d'un footer, tous les liens sont cliquables, mais évidemment nous n'avons pas designé des réseaux pour le projet ou bien créer les ressources. -->
+        <div class="FooterInfos">
+            <div class="Column">
+                <!-- Liens vers les réseaux sociaux -->
+                <h4>Follow us</h4>
+                <ul>
+                    <li class="FooterList"><a href="#"><img src="images/LightTwitter.svg" alt="LogoTwitter" class="LogoTwitter">Twitter</a></li>
+                    <li class="FooterList"><a href="#"><img src="images/LightInstagram.svg" alt="LogoInstagram" class="LogoInstagram">Instagram</a></li>
+                    <li class="FooterList"><a href="#"><img src="images/LightFacebook.svg" alt="LogoFacebook" class="LogoFacebook">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="Column">
+                <!-- Comment nous contacter et où on se trouve -->
+                <h4>Contact us</h4>
+                <ul>
+                    <li class="FooterList"><a href="#">contact@pixelgame.com</a></li>
+                    <li class="FooterList"><a href="#">Paris - 75000 - France</a></li>
+                </ul>
+            </div>
+            <div class="Column">
+                <!-- Les ressources importantes dans un site -->
+                <h4>Ressources</h4>
+                <ul>
+                    <li class="FooterList"><a href="#">Pivacy Policy</a></li>
+                    <li class="FooterList"><a href="#">Terms & conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="Copyright">
+            <span>© 2021 Copyright PixelGame</span>
+        </div>
+    </footer>
+    <script src='script.js'></script>
+</body>
+</html>
