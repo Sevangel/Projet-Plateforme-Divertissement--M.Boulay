@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='script.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='mainClair.css' class="LinkMode">
 </head>
 <body>
     <!-- HEADER -->
@@ -16,7 +15,7 @@
         <!-- Dans un premier temps, développement de la barre nav sans le menu -->
         <nav class="Menu">
             <div class="Logo">
-                <img src="images/LightThemeLogo.png" alt="LogoLight">
+                <img src="images/LightThemeLogo.png" alt="LogoLight" class="LogoMode">
             </div>
             <div class="MenuButton">
                 <a class="PrimaryButton" href="#">S'inscrire</a>
@@ -27,11 +26,13 @@
                 <ul>
                     <li><a href="#"><img class="MenuHover" src="images/LightThemeMenu.png" alt="HamburgerMenu"></a>
                         <ul class="MenuList">
-                            <li class=".MenuTarget"><a href="PageJeu1.html">Le Juste Prix</a></li>
-                            <li class=".MenuTarget"><a href="#">Le Jeu du Simon</a></li>
-                            <li class=".MenuTarget"><a href="#">Le Jeu des Paires</a></li>
-                            <li class=".MenuTarget"><a href="#">Le Snake</a></li>
-                            <li class=".MenuTarget"><a href="#">Le Mastermind</a></li>
+                            <li><a href="PageJeu1.html">Le Juste Prix</a></li>
+                            <li><a href="#">Le Jeu du Simon</a></li>
+                            <li><a href="#">Le Jeu des Paires</a></li>
+                            <li><a href="#">Le Snake</a></li>
+                            <li><a href="#">Le Mastermind</a></li>
+                            <li class="ModeSombre"><a href="#">Mode Sombre</a></li>
+                            <li class="ModeClair"><a href="#">Mode Clair</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -41,6 +42,7 @@
     <!-- MAIN -->
     <main>
         <div class="Team">
+            <!-- Première section -> Présentation de l'équipe avec une photo et une description, c'est aussi là qu'on va voir la répartition du travail -->
             <h2 class="TitleTeam">L'équipe</h2>
             <div class="Row">
                 <div class="block">
@@ -83,12 +85,14 @@
                 </div>
             </div>
         </div>
+        <!-- 2ème section, 2 paragraphes sur notre projet, notre démarche et l'explication du nom et du logo. -->
         <div class="Project">
             <h2 class="TitleProject">Notre projet</h2>
             <p>Notre projet est un site de plateforme de jeux. Nous avons opté pour un design simple dans des tons bleus. Le but est que l'utilisateur ne se sente pas perdu parmis trop d'informations, au contraire de ce que font nos concurrents.</p>
             <br/>
             <p>Le nom PixelGame vient du fait que les écrans sont fait de pixels mais aussi d'une référence en terme de jeux vidéos. Le logo en domino pour faire comprendre à l'utilisateur qu'il s'agit de jeu, des pixels pour remplacer les ronds en référence au nom de la plateforme. Des formes arrondis ont été ajoutées pour trancher avec le nom.</p>
         </div>
+        <!-- 3ème section, la présentation des différents jeux disponibles avec un accès direct vers les pages correspondant. -->
         <div class="Games">
             <h2 class="TitleGames">Nos Jeux</h2>
             <div class="GamesRow">
@@ -137,16 +141,19 @@
     </main>
     <!-- FOOTER -->
     <footer>
+        <!-- Forme d'un footer, tous les liens sont cliquables, mais évidemment nous n'avons pas designé des réseaux pour le projet ou bien créer les ressources. -->
         <div class="FooterInfos">
             <div class="Column">
+                <!-- Liens vers les réseaux sociaux -->
                 <h4>Follow us</h4>
                 <ul>
-                    <li class="FooterList"><a href="#"><img src="images/twitter.svg" alt="LogoTwitter">Twitter</a></li>
-                    <li class="FooterList"><a href="#"><img src="images/instagram.svg" alt="LogoInstagram">Instagram</a></li>
-                    <li class="FooterList"><a href="#"><img src="images/Facebook.svg" alt="LogoFacebook">Facebook</a></li>
+                    <li class="FooterList"><a href="#"><img src="images/LightTwitter.svg" alt="LogoTwitter" class="LogoTwitter">Twitter</a></li>
+                    <li class="FooterList"><a href="#"><img src="images/LightInstagram.svg" alt="LogoInstagram" class="LogoInstagram">Instagram</a></li>
+                    <li class="FooterList"><a href="#"><img src="images/LightFacebook.svg" alt="LogoFacebook" class="LogoFacebook">Facebook</a></li>
                 </ul>
             </div>
             <div class="Column">
+                <!-- Comment nous contacter et où on se trouve -->
                 <h4>Contact us</h4>
                 <ul>
                     <li class="FooterList"><a href="#">contact@pixelgame.com</a></li>
@@ -154,6 +161,7 @@
                 </ul>
             </div>
             <div class="Column">
+                <!-- Les ressources importantes dans un site -->
                 <h4>Ressources</h4>
                 <ul>
                     <li class="FooterList"><a href="#">Pivacy Policy</a></li>
@@ -165,5 +173,6 @@
             <span>© 2021 Copyright PixelGame</span>
         </div>
     </footer>
+    <script src='script.js'></script>
 </body>
 </html>
