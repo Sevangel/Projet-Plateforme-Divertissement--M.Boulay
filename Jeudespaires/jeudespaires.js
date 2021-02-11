@@ -40,13 +40,13 @@ for (let i=0; i<images.length; i++)
                 if (first_card.src == second_card.src){
                  // A chaque paire de carte trouvé le nb_paires_trouvé est incrémenté d'un point
                     nb_paires_trouvé += 1;
-                    score += 60;
-                    document.getElementById('score').innerText = "Votre score est de : " + score + " points";
+                    score += 1;
+                    document.getElementById('score').innerText = "Votre score est de : " + score;
                 }else{
                     first_card.src = "verso-carte.svg";
                     second_card.src = "verso-carte.svg";
-                    score -= 30;
-                    document.getElementById('score').innerText = "Votre score est de : " + score + " points";
+                    score += 1;
+                    document.getElementById('score').innerText = "Votre score est de : " + score;
                 } 
                 first_card = null;
                 second_card = null;     
@@ -55,8 +55,8 @@ for (let i=0; i<images.length; i++)
             {
                 window.alert(
                     "Bravo, vous avez trouvé toutes les paires,"
-                 +"vous finissez avec un score de "+score+" points."
-                 +"Réessayez pour améliorer votre score !"
+                 +"vous finissez avec un score de "+score
+                 + " Réessayez pour améliorer votre score !"
                     )           
             }
         }
