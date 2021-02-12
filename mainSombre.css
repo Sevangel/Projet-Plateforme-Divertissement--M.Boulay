@@ -275,7 +275,6 @@ div.PresentationGame p {
 .GamePlace {
     background-color: #4169E1;
     padding: 100px 200px;
-    height: 400px;
 }
 
 /* Le menu en bas qui permet d'accéder aux autres jeux */
@@ -300,4 +299,125 @@ div.GameMenu div div {
     position: absolute;
     margin-top: 20px;
     margin-left: 130px;
+}
+
+/* CSS UNIQUE */
+/* Pour toutes les parties d'avant, le css est valable sur plusieurs pages en même temps. Ici, c'est le css relatif aux jeux donc il est unique. */
+
+.Pad {
+    padding: 100px 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.SimonScoreboard{
+    padding: 55px 60px;
+    background-color: #CBD8F6;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.StartButtonSimon {
+    padding: 16px 20px;
+    background-color: #4169E1;
+    border-radius: 15px;
+    color: #EDF4F8;
+    font-family: 'Poppins', sans-serif;
+}
+
+a.StartButtonSimon {
+    text-decoration: none;
+}
+
+.SimonSpan {
+    padding-top: 30px;
+    color: #030612;
+}
+
+.PadRom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#NotVisible {
+    background-color: #4169E1;
+}
+
+/* COULEURS */
+
+.Green {
+    background-color: #50A519;
+}
+
+.Red {
+    background-color: #DA2B2B;
+}
+
+.Yellow {
+    background-color: #E9F646;
+}
+
+.Blue {
+    background-color: #29329C;
+}
+
+/* COULEURS HOVER */
+
+.Green:hover {
+    background-color: #2E630C;
+}
+
+.Red:hover {
+    background-color: #A32323;
+}
+
+.Yellow:hover {
+    background-color: #a6af21;
+}
+
+.Blue:hover {
+    background-color: #151C6A;
+} 
+
+
+
+/* COULEURS PRESSED */
+
+.Green:active {
+    /* Oui, j'ai réussi à placer cette MA GNI FI QUE couleur qu'est chartreuse. Bien à vous : Séverine */
+    background-color: chartreuse;
+}
+
+.Red:active {
+    background-color: tomato;
+}
+
+.Yellow:active {
+    background-color: lightgoldenrodyellow;
+}
+
+.Blue:active {
+    background-color: skyblue;
+} 
+
+/* COULEUR ACTIVE */
+
+.light.Blue{
+    background-color: skyblue;
+}
+
+.light.Red{
+    background-color: tomato;
+}
+
+.light.Yellow{
+    background-color: lightgoldenrodyellow;
+}
+
+.light.Green{
+    background-color: chartreuse;
 }
