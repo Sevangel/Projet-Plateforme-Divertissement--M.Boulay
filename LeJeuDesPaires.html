@@ -3,11 +3,12 @@
 <head>
     <meta charset='utf-8'>
     <link rel="shortcut icon" type="image/png" href="images/Logotype.png" />
-    <title>Le Juste Prix</title>
+    <title>Le Jeu des Paires</title>
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='mainClair.css' class="LinkMode">
+    <link rel="stylesheet" type="text/css" href="JeuDesPaires.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -43,23 +44,71 @@
     <main>
         <div>
             <div class="PresentationGame">
-                <h2 class="TitlePresentationGame">Le Juste Prix</h2>
-                <p>L'objectif de ce jeu est de deviner le prix auquel pense l'autre joueur. Ce prix doit être compris entre 0 et 100 inclus.Puis, celui qui a réussit à deviner avec le moins d'essais gagne.</p><br/>
-                <p>Dans une première manche, le joueur devine le prix fixé par l'ordinateur. Il propose des solutions et l'ordinateur réponds suivant la proposition : "Plus grand", "Plus petit" ou bien "C'est ça!". L'ordinateur compte aussi le nombre d'essais.</p><br/>
-                <p>Dans une deuxième manche, le joueur pense à un prix (compris entre 0 et 100 inclus) et l'ordinateur va proposer des solutions. Le joueur devra cliquer sur les boutons "Plus grand", "Plus petit" ou "C'est ça!" suivant la réponse de l'ordinateur. Celui-ci comptera également les essais.</p><br/>
-                <p>Le résultat final sera donné à la fin des deux manches.</p>
+                <h2 class="TitlePresentationGame">Le Jeu des Paires</h2>
+                <p>Mémoriser pour gagner ! </p><br/>
+                <p>Un jeu de carte est disposé face cachée sur un plateau, à chaque tour vous devrez choisir 2 cartes à retourner, si celles-ci sont identiques les deux cartes seront alors retirées du plateau, par contre si les cartes ne sont pas les mêmes elles seront à nouveau retourner et remises en jeu sur le plateau, à vous de mémoriser les cartes afin de créer les paires.Pour gagner il vous faudra trouver tous les paires !
+                </p>
             </div>
             <div class="GameBackground">
                 <div class="GamePlace">
-                    
+                    <p id="score">Votre score est :</p>
+        <p id="nb_paires_trouvé"></p>
+        <h1 id="message"></h1>
+        <!-- Création du tableau ainsi que les différentes cartes -->
+        <table>
+                   <!-- Création de la 1ère ligne avec 4 colonnes (4 cartes)  -->
+            <tr>
+                <td>
+                    <img class="card" src="images/verso-carte.svg" alt="verso-carte" height="170px"  width="120px"/>
+                </td>
+                <td>
+                    <img class="card"src="images/verso-carte.svg" alt="verso-carte" height="170px" width="120px"/>
+                </td>
+                <td>
+                    <img class="card"src="images/verso-carte.svg" alt="verso-carte" height="170px" width="120px"/>
+                </td>
+                <td>
+                    <img class="card"src="images/verso-carte.svg" alt="verso-carte" height="170px" width="120px"/>
+                </td>
+            </tr>
+            <tr>
+                 <!-- Création de la 2ème ligne avec 4 colonnes (4 cartes)  -->
+                <td>
+                    <img class="card"src="images/verso-carte.svg" alt="verso-carte" height="170px" width="120px"/>
+                </td>
+                <td>
+                    <img class="card"src="images/verso-carte.svg" alt="verso-carte" height="170px" width="120px"/>
+                </td>
+                <td>
+                    <img class="card"src="images/verso-carte.svg" alt="verso-carte" height="170px" width="120px"/>  
+                </td>
+                <td>
+                    <img class="card"src="images/verso-carte.svg" alt="verso-carte" height="170px" width="120px"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img class="card"src="images/verso-carte.svg" alt="verso-carte" height="170px"  width="120px"/>
+                </td>
+                <td>
+                    <img class="card"src="images/verso-carte.svg" alt="verso-carte" height="170px" width="120px"/>
+                </td>
+                <td>
+                    <img class="card"src="images/verso-carte.svg" alt="verso-carte" height="170px" width="120px"/>
+                </td>
+                <td>
+                    <img class="card"src="images/verso-carte.svg" alt="verso-carte" height="170px" width="120px"/>
+                </td>
+            </tr>
+        </table>
                 </div>
             </div>
             <div class="GameMenu">
                 <div>
                     <div class="GamesBlock">
-                        <img src="images/Jeu_des_paires.PNG" alt="logo-du-jeu" height="230px"width="230px">
+                        <img src="images/ImageLeJustePrix.png" alt="logo-du-jeu" height="230px"width="230px">
                     </div>
-                    <a href="LeJeuDesPaires.html" class="PrimaryButton">Play</a>
+                    <a href="LeJustePrix.html" class="PrimaryButton">Play</a>
                 </div>
                 <div>
                     <div class="GamesBlock">
@@ -117,5 +166,6 @@
         </div>
     </footer>
     <script src='script.js'></script>
+    <script src="jeudespaires.js"></script>
 </body>
 </html>
