@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='mainClair.css' class="LinkMode">
+    <link rel="stylesheet" type="text/css" href="snake.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -49,7 +50,29 @@
             </div>
             <div class="GameBackground">
                 <div class="GamePlace">
-                    
+                    <section class="main">
+                        <div class="container">
+                         <canvas id="canvas" width="400" height="400"></canvas>
+                         <div class="class-btn">
+                             <button onclick="window.location.reload()" >Recommencer</button>
+                             <button class="btn" onclick="flag=!flag">Pause</button>                     
+                         </div>
+                         <div class="paragraphe">
+                             <p> Hey! Moi c'est Snakee, je suis le serpent que tu va diriger. <br>
+                             Laisse moi t'expliquer comment fonctionne le jeux. Pour me diriger <br> 
+                             il faut utliliser les touches de directions c'est-a-dire les fleches <br> du clavier 
+                             , il y a des boutons a coté, il y est marquer a quoi .
+                             <br>
+                             <br>
+                             <strong> 
+                             1. Si tu te mord tu perd <br>
+                             2. Si tu Hit un mur Tu a perdu <br>
+                             3.Ton but est d'augmenter ton score en haut à gauche <br>
+                             en me faisant manger la pomme bleu
+                         </strong>
+                         </div>
+                        </div>
+                     </section>
                 </div>
             </div>
             <div class="GameMenu">
@@ -115,5 +138,6 @@
         </div>
     </footer>
     <script src='script.js'></script>
+    <script src="snake.js"></script>
 </body>
 </html>

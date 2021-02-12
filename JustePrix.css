@@ -1,0 +1,28 @@
+
+/* Global */
+
+h1, h2, h3 {
+  margin: 1em 0;
+}
+
+/* Titre 1 */
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #CBD8F6;
+}
+
+/* Titre 2 */
+
+h2 > a {
+  color: inherit; /* Herite de la couleur de l'élément parent */
+}
+
+/* Titre 3 */
+
+h3 {
+  font-size: 1.3rem;
+  color: #CBD8F6;
+}
