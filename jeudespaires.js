@@ -63,6 +63,8 @@ for (let i=0; i<images.length; i++)
     )
 }
 /*fonction pour melanger indice_carte*/
+/*La fonction est basée sur les exemples trouvés dans cette page 
+https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array*/
 function shuffle(list) {
     var i, random_index, indice_image;
     for (i = list.length - 1; i > 0; i--) 
