@@ -8,6 +8,7 @@ let Red = document.querySelector('.Red')
 let Yellow = document.querySelector('.Yellow')
 let Blue = document.querySelector('.Blue')
 let Counter = document.querySelector('#Counter')
+let PlayerCount = 0
 let ArrColors = [Red, Yellow, Blue, Green]
 let PlayerTab = []
 
@@ -29,7 +30,7 @@ document.querySelector('.StartButtonSimon').addEventListener('click', function(e
 // Fonction pour reset le score
 
 function ClearScore() {
-    Counter.innerHTML = 0;
+    Counter.innerHTML = PlayerCount
     SimonTabCache = []
     PlayerTab = []
 }
@@ -105,6 +106,7 @@ function CheckPass() {
     for (i = 0; i < PlayerTab.length; i++) {
         if (PlayerTab[i] != SimonTabCache[i]) {
             alert("Quel dommage...")
+            PlayerCount = 0
             ClearScore()
             return
         }
@@ -112,9 +114,12 @@ function CheckPass() {
     if (PlayerTab.length == SimonTabCache.length) {
         if (PlayerTab.length >= 15) {
             alert("VOUS AVEZ GAGNE UN IPHONE X")
+            PlayerCount = 0
             ClearScore()
         }
         else {
+            PlayerCount++
+            Counter.innerHTML = PlayerCount
             PlayerTab = []
             ColorSequency()
         }   
