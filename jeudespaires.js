@@ -5,7 +5,7 @@ var indice_carte= shuffle([
     5,5,6,6,
 ]);
 
-var images = document.getElementsByTagName('img');
+var images = document.getElementsByClassName('card');
 nb_paires_trouvé = 0;
 score = 0;
 
